@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/register.css" type="text/css" />
+    <script src="/script/register.js"></script>
+</head>
+
+<body style="background-image: url(img/10.jpeg);background-size: 100%;">
+    <div class="justify-content-center">
+        <div class="d-flex aligns-items-center justify-content-center card text-center w-50 position-absolute top-50 start-50 translate-middle bg-dark text-white" style="width: 500px;align-items: center;">
+        
+                <div class="card-body " style="justify-content: center;">
+                    <h3 style="text-shadow: green;">Register</h3>
+                    <form action="/action_page.php" class="justify-content-center" name="registerForm" onsubmit="return validatePassword()"">
+                        <div class="my-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required />
+                        </div>
+                        <div>
+                            <label for="customerid" class="form-label">Customer ID:</label>
+                            <input type="number" class="form-control" id="customerid" placeholder="Enter your customer id:"
+                                name="customer id"  required/>
+                        </div>
+                        <div class="my-3">
+                            <label for="PhoneNo" class="form-label">Phone No:</label>
+                            <input type="number" name="PhoneNo" id="PhoneNo" class="form-control"
+                                placeholder="Enter your phone number:" required />
+                        </div>
+                        <div class="my-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required/>
+                        </div>
+                        <div class="my-3">
+                            <label for="pwd1" class="form-label">Create Password:</label>
+                            <input type="password" class="form-control" id="pwd1" placeholder="Enter a new password"
+                                name="pwd1" required/>
+                        </div>
+                        <div class="my-3">
+                            <label for="pwd" class="form-label">Confirm Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Confirm new password"
+                                name="pwd" required/>
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" />
+                                Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+</html>
